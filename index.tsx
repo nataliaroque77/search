@@ -21,7 +21,7 @@ const SearchLayout = () => {
       sortableProducts = [...products]; //  Create a shallow copy
     } else {
       //  Create a shallow copy and find search term
-      sortableProducts = [...products].filter((product) =>
+      sortableProducts = products.filter((product) =>
         product.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
